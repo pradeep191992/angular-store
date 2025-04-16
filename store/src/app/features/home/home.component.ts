@@ -1,5 +1,10 @@
 import { Component, OnInit } from '@angular/core';
+import { Store } from '@ngrx/store';
+import { Observable } from 'rxjs';
 import { GroceryService } from 'src/app/services/grocery.service';
+import { cartAction } from 'src/app/store/action/cart.action';
+import { groceriesAction } from 'src/app/store/action/grocery.action';
+import { selectFilteredGroceries } from 'src/app/store/selector/grocery.selectors';
 import { Grocery } from 'src/app/types/types.model';
 
 @Component({
@@ -9,12 +14,17 @@ import { Grocery } from 'src/app/types/types.model';
 })
 export class HomeComponent implements OnInit {
 
-  groceryList: Grocery[] = [];
   uniqueTypes: string[] = [];
   selectedType = 'All'
   isDropdownOpen: boolean = false;
+  groceries$: Observable<Grocery[]>;
 
-  constructor(private groceryService: GroceryService){}
+  constructor(
+    private groceryService: GroceryService,
+    private store: Store<{groceries: Grocery[]}>
+  ){
+    this.groceries$ = store.select("groceries");
+  }
 
   ngOnInit(): void {
     this.getGroceries();
@@ -26,8 +36,7 @@ export class HomeComponent implements OnInit {
 
   getGroceries() {
     this.groceryService.fetchData().subscribe(res => {
-      this.groceryList = res;
-  
+      this.store.dispatch(groceriesAction({payload: res}))
       this.uniqueTypes = Array.from(new Set(res.map(item => item.type)));
       this.uniqueTypes.unshift('All');
     });
@@ -37,14 +46,13 @@ export class HomeComponent implements OnInit {
   selectDropdownItem(type: string) {
     this.isDropdownOpen = false;
     this.selectedType = type;
-    this.groceryService.fetchData().subscribe(res => {
-      this.groceryList = type === 'All' ? res : res.filter(item => item.type === type);
-    });
+    this.groceries$ = this.store.select(selectFilteredGroceries(type))
   }
   
 
   addToCart(item: any): void {
-    item.quantity = 1;
+    // item.quantity = 1;
+    this.store.dispatch(cartAction({payload: item}))
   }
   
   increaseQty(item: any): void {
