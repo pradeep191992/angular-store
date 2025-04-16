@@ -6,5 +6,6 @@ export interface Grocery {
   height: number
   width: number
   price: number
-  rating: number
+  rating: number,
+  quantity: number
 }

@@ -7,7 +7,8 @@
     "height": 600,
     "width": 400,
     "price": 28.1,
-    "rating": 4
+    "rating": 4,
+    "quantity": 0
   },
   {
     "title": "Sweet fresh stawberry",
@@ -17,7 +18,8 @@
     "height": 450,
     "width": 299,
     "price": 29.45,
-    "rating": 4
+    "rating": 4,
+    "quantity": 0
   },
   {
     "title": "Asparagus",
@@ -27,7 +29,8 @@
     "height": 450,
     "width": 299,
     "price": 18.95,
-    "rating": 3
+    "rating": 3,
+    "quantity": 0
   },
   {
     "title": "Green smoothie",
@@ -37,7 +40,8 @@
     "height": 600,
     "width": 399,
     "price": 17.68,
-    "rating": 4
+    "rating": 4,
+    "quantity": 0
   },
   {
     "title": "Raw legums",
@@ -47,7 +51,8 @@
     "height": 450,
     "width": 299,
     "price": 17.11,
-    "rating": 2
+    "rating": 2,
+    "quantity": 0
   },
   {
     "title": "Baking cake",
@@ -57,7 +62,8 @@
     "height": 450,
     "width": 675,
     "price": 11.14,
-    "rating": 4
+    "rating": 4,
+    "quantity": 0
   },
   {
     "title": "Pesto with basil",
@@ -67,7 +73,8 @@
     "height": 450,
     "width": 299,
     "price": 18.19,
-    "rating": 2
+    "rating": 2,
+    "quantity": 0
   },
   {
     "title": "Hazelnut in black ceramic bowl",
@@ -77,7 +84,8 @@
     "height": 450,
     "width": 301,
     "price": 27.35,
-    "rating": 0
+    "rating": 0,
+    "quantity": 0
   },
   {
     "title": "Fresh stawberry",
@@ -87,7 +95,8 @@
     "height": 600,
     "width": 399,
     "price": 28.59,
-    "rating": 4
+    "rating": 4,
+    "quantity": 0
   },
   {
     "title": "Lemon and salt",
@@ -97,7 +106,8 @@
     "height": 450,
     "width": 299,
     "price": 15.79,
-    "rating": 5
+    "rating": 5,
+    "quantity": 0
   },
   {
     "title": "Homemade bread",
@@ -107,7 +117,8 @@
     "height": 450,
     "width": 301,
     "price": 17.48,
-    "rating": 3
+    "rating": 3,
+    "quantity": 0
   },
   {
     "title": "Legums",
@@ -117,7 +128,8 @@
     "height": 600,
     "width": 399,
     "price": 14.77,
-    "rating": 0
+    "rating": 0,
+    "quantity": 0
   },
   {
     "title": "Fresh tomato",
@@ -127,7 +139,8 @@
     "height": 600,
     "width": 903,
     "price": 16.3,
-    "rating": 2
+    "rating": 2,
+    "quantity": 0
   },
   {
     "title": "Healthy breakfast",
@@ -137,7 +150,8 @@
     "height": 450,
     "width": 350,
     "price": 13.02,
-    "rating": 2
+    "rating": 2,
+    "quantity": 0
   },
   {
     "title": "Green beans",
@@ -147,7 +161,8 @@
     "height": 450,
     "width": 300,
     "price": 28.79,
-    "rating": 1
+    "rating": 1,
+    "quantity": 0
   },
   {
     "title": "Baked stuffed portabello mushrooms",
@@ -157,7 +172,8 @@
     "height": 600,
     "width": 400,
     "price": 20.31,
-    "rating": 1
+    "rating": 1,
+    "quantity": 0
   },
   {
     "title": "Strawberry jelly",
@@ -167,7 +183,8 @@
     "height": 400,
     "width": 600,
     "price": 14.18,
-    "rating": 1
+    "rating": 1,
+    "quantity": 0
   },
   {
     "title": "Pears juice",
@@ -177,7 +194,8 @@
     "height": 600,
     "width": 398,
     "price": 19.49,
-    "rating": 4
+    "rating": 4,
+    "quantity": 0
   },
   {
     "title": "Fresh pears",
@@ -187,7 +205,8 @@
     "height": 600,
     "width": 398,
     "price": 15.12,
-    "rating": 5
+    "rating": 5,
+    "quantity": 0
   },
   {
     "title": "Caprese salad",
@@ -197,7 +216,8 @@
     "height": 400,
     "width": 600,
     "price": 16.76,
-    "rating": 5
+    "rating": 5,
+    "quantity": 0
   },
   {
     "title": "Oranges",
@@ -207,7 +227,8 @@
     "height": 450,
     "width": 274,
     "price": 21.48,
-    "rating": 4
+    "rating": 4,
+    "quantity": 0
   },
   {
     "title": "Vegan food",
@@ -217,7 +238,8 @@
     "height": 450,
     "width": 299,
     "price": 29.66,
-    "rating": 4
+    "rating": 4,
+    "quantity": 0
   },
   {
     "title": "Breakfast with muesli",
@@ -227,7 +249,8 @@
     "height": 450,
     "width": 299,
     "price": 22.7,
-    "rating": 2
+    "rating": 2,
+    "quantity": 0
   },
   {
     "title": "Honey",
@@ -237,7 +260,8 @@
     "height": 450,
     "width": 299,
     "price": 17.01,
-    "rating": 2
+    "rating": 2,
+    "quantity": 0
   },
   {
     "title": "Breakfast with cottage",
@@ -247,7 +271,8 @@
     "height": 600,
     "width": 398,
     "price": 14.05,
-    "rating": 1
+    "rating": 1,
+    "quantity": 0
   },
   {
     "title": "Strawberry smoothie",
@@ -257,7 +282,8 @@
     "height": 600,
     "width": 400,
     "price": 28.86,
-    "rating": 2
+    "rating": 2,
+    "quantity": 0
   },
   {
     "title": "Strawberry and mint",
@@ -267,7 +293,8 @@
     "height": 450,
     "width": 299,
     "price": 26.21,
-    "rating": 4
+    "rating": 4,
+    "quantity": 0
   },
   {
     "title": "Ricotta",
@@ -277,7 +304,8 @@
     "height": 600,
     "width": 398,
     "price": 27.81,
-    "rating": 5
+    "rating": 5,
+    "quantity": 0
   },
   {
     "title": "Cuban sandwiche",
@@ -287,7 +315,8 @@
     "height": 450,
     "width": 300,
     "price": 18.5,
-    "rating": 4
+    "rating": 4,
+    "quantity": 0
   },
   {
     "title": "Granola",
@@ -297,7 +326,8 @@
     "height": 450,
     "width": 300,
     "price": 29.97,
-    "rating": 3
+    "rating": 3,
+    "quantity": 0
   },
   {
     "title": "Smoothie with chia seeds",
@@ -307,7 +337,8 @@
     "height": 600,
     "width": 900,
     "price": 25.26,
-    "rating": 5
+    "rating": 5,
+    "quantity": 0
   },
   {
     "title": "Yogurt",
@@ -317,7 +348,8 @@
     "height": 450,
     "width": 299,
     "price": 27.61,
-    "rating": 4
+    "rating": 4,
+    "quantity": 0
   },
   {
     "title": "Sandwich with salad",
@@ -327,7 +359,8 @@
     "height": 600,
     "width": 398,
     "price": 22.48,
-    "rating": 5
+    "rating": 5,
+    "quantity": 0
   },
   {
     "title": "Cherry",
@@ -337,7 +370,8 @@
     "height": 600,
     "width": 400,
     "price": 14.35,
-    "rating": 5
+    "rating": 5,
+    "quantity": 0
   },
   {
     "title": "Raw asparagus",
@@ -347,7 +381,8 @@
     "height": 600,
     "width": 400,
     "price": 22.97,
-    "rating": 4
+    "rating": 4,
+    "quantity": 0
   },
   {
     "title": "Corn",
@@ -357,7 +392,8 @@
     "height": 450,
     "width": 300,
     "price": 13.55,
-    "rating": 2
+    "rating": 2,
+    "quantity": 0
   },
   {
     "title": "Vegan",
@@ -367,7 +403,8 @@
     "height": 600,
     "width": 398,
     "price": 28.96,
-    "rating": 5
+    "rating": 5,
+    "quantity": 0
   },
   {
     "title": "Fresh blueberries",
@@ -377,7 +414,8 @@
     "height": 450,
     "width": 321,
     "price": 21.01,
-    "rating": 4
+    "rating": 4,
+    "quantity": 0
   },
   {
     "title": "Smashed avocado",
@@ -387,7 +425,8 @@
     "height": 450,
     "width": 450,
     "price": 25.88,
-    "rating": 0
+    "rating": 0,
+    "quantity": 0
   },
   {
     "title": "Italian ciabatta",
@@ -397,7 +436,8 @@
     "height": 450,
     "width": 565,
     "price": 15.18,
-    "rating": 1
+    "rating": 1,
+    "quantity": 0
   },
   {
     "title": "Rustic breakfast",
@@ -407,7 +447,8 @@
     "height": 450,
     "width": 307,
     "price": 21.32,
-    "rating": 0
+    "rating": 0,
+    "quantity": 0
   },
   {
     "title": "Sliced lemons",
@@ -417,7 +458,8 @@
     "height": 600,
     "width": 900,
     "price": 27.14,
-    "rating": 2
+    "rating": 2,
+    "quantity": 0
   },
   {
     "title": "Plums",
@@ -427,7 +469,8 @@
     "height": 450,
     "width": 299,
     "price": 19.18,
-    "rating": 1
+    "rating": 1,
+    "quantity": 0
   },
   {
     "title": "French fries",
@@ -437,7 +480,8 @@
     "height": 600,
     "width": 400,
     "price": 18.32,
-    "rating": 3
+    "rating": 3,
+    "quantity": 0
   },
   {
     "title": "Strawberries",
@@ -447,7 +491,8 @@
     "height": 450,
     "width": 352,
     "price": 15.13,
-    "rating": 3
+    "rating": 3,
+    "quantity": 0
   },
   {
     "title": "Ground beef meat burger",
@@ -457,7 +502,8 @@
     "height": 450,
     "width": 675,
     "price": 11.73,
-    "rating": 5
+    "rating": 5,
+    "quantity": 0
   },
   {
     "title": "Tomatoes",
@@ -467,7 +513,8 @@
     "height": 450,
     "width": 675,
     "price": 26.03,
-    "rating": 4
+    "rating": 4,
+    "quantity": 0
   },
   {
     "title": "Basil",
@@ -477,7 +524,8 @@
     "height": 450,
     "width": 678,
     "price": 15.19,
-    "rating": 4
+    "rating": 4,
+    "quantity": 0
   },
   {
     "title": "Fruits bouquet",
@@ -487,7 +535,8 @@
     "height": 600,
     "width": 401,
     "price": 18.18,
-    "rating": 1
+    "rating": 1,
+    "quantity": 0
   },
   {
     "title": "Peaches on branch",
@@ -497,6 +546,7 @@
     "height": 600,
     "width": 400,
     "price": 25.62,
-    "rating": 3
+    "rating": 3,
+    "quantity": 0
   }
 ]

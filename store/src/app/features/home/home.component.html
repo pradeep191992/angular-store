@@ -1,0 +1,89 @@
+  <!-- <pre>{{groceryList|json}}</pre> -->
+
+
+  <div class="px-8 pt-8">
+
+    <div class="relative inline-block text-left w-40">
+      <button type="button"
+        (click)="toggleDropdown()"
+        class="inline-flex justify-between w-full capitalize rounded-md border border-gray-300 shadow-sm px-4 py-2 bg-white text-lg font-medium text-gray-700 hover:bg-gray-50 focus:outline-none"
+        aria-haspopup="true">
+        {{selectedType}}
+        <svg class="h-8 w-6 ml-2 transition-transform duration-200"
+          [ngClass]="{ 'rotate-180': isDropdownOpen }"
+          xmlns="http://www.w3.org/2000/svg"
+          fill="none"
+          viewBox="0 0 24 24"
+          stroke="currentColor">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+        </svg>
+      </button>
+    
+      <!-- Dropdown Menu -->
+      <div *ngIf="isDropdownOpen"
+        class="origin-top-right absolute left-0 mt-2 w-56 capitalize rounded-md shadow-lg bg-white ring-1 ring-black ring-opacity-5 z-10">
+        <div class="py-1" role="menu">
+          <p *ngFor="let type of uniqueTypes"
+            (click)="selectDropdownItem(type)"
+            class="block px-4 py-2 text-lg text-gray-700 hover:bg-gray-100 cursor-pointer" >
+            {{ type }}
+          </p>
+        </div>
+      </div>
+    </div>
+    
+    
+  </div>
+  <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 p-8">
+    <div *ngFor="let item of groceryList;" class="mx-auto w-full bg-white rounded-2xl shadow-md overflow-hidden border border-gray-200 mb-6 flex flex-col">
+      <img src="/assets/images/{{item.filename}}" alt="{{item.title}}" class="w-full h-60 object-cover" />
+    
+      <div class="p-4 flex flex-col h-full">
+        <h2 class="text-xl font-semibold text-gray-800 mb-1">{{item.title}}</h2>
+        <p class="text-sm text-gray-500 mb-2">Type: <span class="capitalize">{{item.type}}</span></p>
+        <p class="text-gray-600 text-sm mb-4 line-clamp">{{item.description}}</p>
+    
+        <div class="flex items-center justify-between mb-4 mt-auto">
+          <span class="text-lg font-bold text-green-600">${{item.price}}</span>
+    
+          <div class="flex items-center space-x-1 text-yellow-400">
+            <ng-container *ngFor="let index of [1,2,3,4,5]">
+              <ng-container *ngTemplateOutlet="orderOperationDate; context: {index: index, rating: item.rating}"></ng-container>
+            </ng-container>
+          </div>
+        </div>
+    
+        <!-- Add to Cart / Quantity Control -->
+        <div *ngIf="!item.quantity || item.quantity === 0; else quantityControls">
+          <button 
+            (click)="addToCart(item)" 
+            class="w-full bg-blue-600 hover:bg-blue-700 text-white font-medium py-2 px-4 rounded-xl transition duration-300"
+          >
+            Add to Cart
+          </button>
+        </div>
+    
+        <ng-template #quantityControls>
+          <div class="flex items-center justify-between bg-gray-100 px-4 py-2 rounded-xl">
+            <button (click)="decreaseQty(item)" class="text-lg font-bold text-gray-700 px-3">−</button>
+            <span class="text-base font-semibold">{{item?.quantity}}</span>
+            <button (click)="increaseQty(item)" class="text-lg font-bold text-gray-700 px-3">+</button>
+          </div>
+        </ng-template>
+      </div>
+    </div>
+  </div>
+  
+  <ng-template #orderOperationDate let-index="index" let-rating="rating">
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      [ngClass]="index <= rating ? 'fill-current text-yellow-400' : 'text-gray-300'"
+      class="w-5 h-5"
+      viewBox="0 0 20 20"
+      fill="currentColor"
+    >
+      <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.243 3.83a1 1 0 00.95.69h4.02c.969 0 1.371 1.24.588 1.81l-3.254 2.364a1 1 0 00-.364 1.118l1.243 3.83c.3.921-.755 1.688-1.538 1.118l-3.254-2.364a1 1 0 00-1.175 0l-3.254 2.364c-.783.57-1.838-.197-1.538-1.118l1.243-3.83a1 1 0 00-.364-1.118L2.294 9.257c-.783-.57-.38-1.81.588-1.81h4.02a1 1 0 00.95-.69l1.243-3.83z"/>
+    </svg>
+  </ng-template>
+  
+  
