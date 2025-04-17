@@ -1,4 +1,6 @@
 import { Component } from '@angular/core';
+import { Store } from '@ngrx/store';
+import { CartModel } from 'src/app/types/types.model';
 
 @Component({
   selector: 'app-header',
@@ -8,6 +10,16 @@ import { Component } from '@angular/core';
 export class HeaderComponent {
 
   isCartOpen: boolean = false;
+
+  numberOfItems = 0;
+
+  constructor(
+    private store: Store<{myCart: CartModel[]}>
+  ){
+    store.select('myCart').subscribe(res => {
+      this.numberOfItems = res.length;
+    })
+  }
 
   toggleCart() {
     this.isCartOpen = !this.isCartOpen;
