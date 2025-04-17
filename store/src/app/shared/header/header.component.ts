@@ -7,4 +7,12 @@ import { Component } from '@angular/core';
 })
 export class HeaderComponent {
 
+  isCartOpen: boolean = false;
+
+  toggleCart() {
+    this.isCartOpen = !this.isCartOpen;
+  }
+  isCartOverlayClose(event: boolean){
+    this.isCartOpen = event;
+  }
 }

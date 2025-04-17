@@ -12,8 +12,8 @@ import { EffectsModule } from '@ngrx/effects';
 import { groceryReducer } from './store/reducer/grocery.reducer';
 import { StoreDevtoolsModule } from '@ngrx/store-devtools';
 import { cartReducer } from './store/reducer/cart.reducer';
-import { CartComponent } from './features/cart/cart.component';
-import { CartOverlayComponent } from './features/cart-overlay/cart-overlay.component';
+import { CartOverlayComponent } from './shared/cart-overlay/cart-overlay.component';
+import { CartComponent } from './shared/cart/cart.component';
 
 @NgModule({
   declarations: [

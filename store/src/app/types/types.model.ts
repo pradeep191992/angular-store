@@ -9,3 +9,11 @@ export interface Grocery {
   rating: number,
   quantity: number
 }
+
+export interface CartModel {
+  title: string
+  type: string
+  filename: string
+  price: number
+  quantity: number
+}
